@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and DOM maniputalion review</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="https://kit.fontawesome.com/d5b001809f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1>HTML content categories</h1>
+    <ul>
+        <li><code><b>&lt;a&gt;</b></code> element (or anchor element), with its href attribute, creates a
+            hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can
+            address.</li>
+        <div class="section">
+            <p>Contact me at:</p>
+
+            <div><i class="fa-solid fa-globe"></i><a href="https://example.com">https://example.com</a></div>
+            <div><i class="fa-solid fa-envelope"></i><a
+                    href="mailto:jan.kowalski@example.com">jan.kowalski@example.com</a></div>
+            <div><i class="fa-solid fa-phone"></i><a href="tel:+123456789">+123456789</a></div>
+        </div>
+        <br>
+        <!--  -->
+        <li><code><b>&lt;abbr&gt</b></code> element represents an abbreviation or acronym.</li>
+        <br>
+        <div class="section">
+            <p>
+                You can use <abbr>CSS</abbr> (Cascading Style Sheets) to style your <abbr>HTML</abbr> (HyperText Markup
+                Language).
+                Using style sheets, you can keep your <abbr>CSS</abbr> presentation layer and <abbr>HTML</abbr> content
+                layer
+                separate. This is called "separation of concerns (podział interesów)."
+            </p>
+        </div>
+
+        <br>
+        <!--  -->
+        <li><code><b>&lt;address&gt</b></code> element indicates that the enclosed HTML provides contact information for
+            a
+            person or people, or
+            for an organization.
+        </li>
+        <br>
+        <div class="section">
+            <address><a href="">Jan Kowalski</a><br><a
+                    href="mailto:jan.kowalski@example.com">jan.kowalski@example.com</a><br><a href="tel:+14155550132">+1
+                    (415) 555‑0132</a>
+            </address>
+        </div>
+        <br>
+        <!--  -->
+        <li><code><b>&lt;article&gt</b></code> element represents a self-contained composition in a
+            document, page, application, or site, which is intended to be independently distributable or reusable
+            (e.g., in syndication).</li>
+        <br>
+        <div class="section">
+            <article class="forecast">
+                <h1>Weather forecast for: Poznań</h1>
+                <article class="day-forecast">
+                    <h2>26 November 2023</h2>
+                    <p>Periods of rain</p>
+                    <i class="fa-solid fa-cloud-sun-rain"></i>
+                </article>
+                <article class="day-forecast">
+                    <h2>27 November 2023</h2>
+                    <p>Cloudy</p>
+                    <i class="fa-solid fa-cloud"></i>
+                </article>
+                <article class="day-forecast">
+                    <h2>28 November 2023</h2>
+                    <p>Sunny</p>
+                    <i class="fa-solid fa-sun"></i>
+                </article>
+            </article>
+        </div>
+        <br>
+        <!--  -->
+        <li><code><b>&lt;aside&gt</b></code> element represents a portion of a document whose content is only indirectly
+            related to the document's main content. Asides are frequently presented as sidebars or call-out boxes.</li>
+        <br>
+        <div class="section">
+            <aside>
+                <p>The park covers an area of 33.92 square kilometres, with around 85% of it covered by
+                    forests. The park includes the northern and part of the southern side of the Babia Góra massif. </p>
+            </aside>
+            <p>
+                <i>Babia Góra National Park</i> (Polish: Babiogórski Park Narodowy) is one of the 23 national parks in
+                Poland,
+                located in the southern part of the country, in Lesser Poland Voivodeship, on the border with Slovakia.
+                Its
+                headquarters are located in Zawoja. A Nature Reserve which roughly covered the area of the modern-day
+                national park was created in 1933, with the actual park established on October 30, 1954. Since 1976,
+                it has been designated by UNESCO as a biosphere reserve.
+            </p>
+        </div>
+        <br>
+        <!--  -->
+        <li><code><b>&lt;audio&gt;</b></code> element is used to embed sound content in documents. It may contain one or
+            more audio sources, represented using the src attribute or the &lt;source&gt; element: the
+            browser will choose the most suitable one.</li>
+        <br>
+        <div class="section">
+            <audio controls>
+                <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
+                    type="audio/mpeg">
+                <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.ogg"
+                    type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <br>
+        <!--  -->
+        <li><code><b>&lt;b&gt;</b></code> element represents a span of text stylistically different from normal text,
+            without conveying any special importance or relevance. It is typically used for keywords in a summary,
+            product names in a review, or other spans of text whose typical presentation would be boldfaced. Another
+            example of its use is to mark the lead sentence of each paragraph of an article.
+            <br>
+            If you wish to create boldface text, you should use the CSS <b>font-weight</b> property.
+            <br>
+            If you wish to indicate an element is of
+            special importance, you should use the <b>&lt;strong&gt;</b> element.
+        </li>
+        <br>
+        <div class="section">
+            <p>
+                <b>Białowieża National Park</b> (Polish: Białowieski Park Narodowy) is a national park in Podlaskie
+                Voivodeship, in Eastern Poland adjacent with the border with Belarus. The total area of the park is
+                105.2 square kilometres (40.6 sq mi). It is located 62 km (39 mi) southeast of Białystok (Poland).
+            </p>
+        </div>
+        <br>
+        <!--  -->
+        <li><code><b>&lt;bdo&gt;</b></code> element represents explicit text directionality formatting, overriding the
+            Unicode bidirectional algorithm. This is useful, for example, in Western pages containing multiple
+            quotations in the Arabic script, where it is desirable for the quotation marks to follow the direction of
+            the text, and not the global direction of the page.</li>
+        <br>
+        <div class="section">
+            <p>
+                <bdo dir="ltr">This text will be written from the left to right</bdo>
+                <br>
+                <bdo dir="rtl">This text will be written from right to left</bdo>
+            </p>
+        </div>
+        <br>
+        <!--  -->
+        <li><code><b>&lt;blockquote&gt;</b></code> element indicates that the enclosed text is an extended quotation.
+            Usually, this is rendered visually by indentation. A URL for the source of
+            the quotation may be given using the <b>cite attribute</b>, while a text representation of the source can be
+            given
+            using the <b>&lt;cite&gt; element</b>.</li>
+        <br>
+        <div class="section">
+            <blockquote cite="https://www.brainyquote.com/authors/pope-john-paul-ii-quotes">
+                <p>" I plead with you--never, ever give up on hope, never doubt, never tire, and never become
+                    discouraged.
+                    Be not afraid ".
+                </p>
+                <footer>— Pope John Paul II, <cite>Pope John Paul II: In My Own Words</cite></footer>
+            </blockquote>
+        </div>
+        <br>
+        <!--  -->
+        <li><code><b>&lt;body&gt;</b></code> element represents the content of an HTML document. There can be only one
+            <b>&lt;body&gt;</b> element in a document.
+        </li>
+        <br>
+        <!--  -->
+        <li><code><b>&lt;br&gt;</b></code> element produces a line break in text (carriage-return). It is useful for
+            writing a poem or an address, where the division of lines is significant.</li>
+        <br>
+        <div class="section">
+            <div class="poem">
+                Litwo, Ojczyzno moja! ty jesteś jak zdrowie;<br>
+                Ile cię trzeba cenić, ten tylko się dowie,<br>
+                Kto cię stracił. Dziś piękność twą w całej ozdobie<br>
+                Widzę i opisuję, bo tęsknię po tobie. <br>
+            </div>
+        </div>
+        <br>
+        <!--  -->
+        <li><code><b>&lt;button&gt;</b></code> element represents a clickable button, used to submit forms or anywhere
+            in
+            a document for accessible, standard button functionality.</li>
+        <br>
+        <div class="section" id="button-background">
+            <button class="btn" id="button">Click me</button>
+        </div>
+        <br>
+        <!--  -->
+    </ul>
+
+    <script type="module" src="app.js">
+        import lottieWeb from 'https://cdn.skypack.dev/lottie-web';
+    </script>
+
+</body>
+
+</html>
