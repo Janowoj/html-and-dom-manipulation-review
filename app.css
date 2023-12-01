@@ -96,3 +96,9 @@ aside>p {
 .background {
     background-color: white;
 }
+
+#canvas {
+    border: 1px solid black;
+    width: 100%;
+    background: #29627e;
+}
