@@ -146,3 +146,12 @@ tr:nth-child(odd) td {
 .col-two {
     background-color: #586597;
 }
+
+.colgroup {
+    background-color: #a77577;
+}
+
+.desription-list,
+dt {
+    font-weight: bold;
+}

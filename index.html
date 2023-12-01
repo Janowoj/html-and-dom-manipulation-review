@@ -236,7 +236,7 @@
         <li><code><b>&lt;cite&gt;</b></code> element represents a reference to a creative work. It must include the
             title
             of a work or a URL reference, which may be in an abbreviated form according to the conventions used for the
-            addition of citation metadata.</li>
+            addition of citation metadata ("Pan Tadeusz" string is inside the cite element).</li>
         <br>
         <div class="section">
             <figure>
@@ -305,7 +305,128 @@
         </div>
         <br>
         <!--  -->
+        <li><code><b>&lt;colgroup&gt;</b></code> element defines a group of columns within a table.</li>
+        <br>
+        <div class="section">
+            <table>
+                <colgroup class="colgroup">
+                    <col>
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Savings</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>January</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>February</td>
+                        <td>$80</td>
+                    </tr>
+                    <tr>
+                        <td>March</td>
+                        <td>$90</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <!--  -->
+        <li><code><b>&lt;data&gt;</b></code> element links a given piece of content with a machine-readable translation
+            (e.g. "Wild Orange" is inside data element with value attribute set to some number).
+        </li>
+        <br>
+        <div class="section">
+            <p>
+                Essential Oils with Citrus
+            </p>
+            <ul>
+                <li><data value="101">Wild Orange</data></li>
+                <li><data value="102">Lemon</data></li>
+                <li><data value="103">Grapefruit</data></li>
+                <li><data value="104">Lime</data></li>
+                <li><data value="105">Tangerine</data></li>
+            </ul>
+            <br>
+        </div>
+        <br>
+        <!--  -->
+        <li><code><b>&lt;datalist&gt;</b></code> element contains a set of <b>&lt;option&gt;</b> elements that
+            represent
+            the permissible or recommended options available to choose from within other controls.</li>
+        <br>
+        <div class="section">
+            <label for="pizza-choise">Choose pizza:</label>
+            <input list="pizza-type" name="pizza-choise">
+            <datalist id="pizza-type">
+                <option value="margherita"></option>
+                <option value="pepperoni"></option>
+                <option value="funghi"></option>
+                <option value="tonno"></option>
+            </datalist>
+        </div>
+        <br>
+        <!--  -->
+        <li><code><b>&lt;dd&gt;</b></code> element provides the description for the preceding
+            term (<b>&lt;dt&gt;</b>) in a description list (<b>&lt;dl&gt;</b>).</li>
+        <br>
+        <div class="section">
+            <p class="desription-list">Several Application Layer Protocols in Computer Network:</p>
+            <dl>
+                <dt>TELNET</dt>
+                <dd>TELetype NETwork.</dd>
+                <dt>FTP</dt>
+                <dd>File Transfer Protocol.</dd>
+                <dt>TFTP</dt>
+                <dd>Trivial File Transfer Protocol.</dd>
+                <dt>NFS</dt>
+                <dd>Network File System.</dd>
+                <dt>SMTP</dt>
+                <dd>Simple Mail Transfer Protocol.</dd>
+                <dt>LPD</dt>
+                <dd>Line Printer Daemon.</dd>
+                <dt>X window</dt>
+                <dd>Graphical User Interface.</dd>
+                <dt>DNS</dt>
+                <dd>Domain Name System.</dd>
+                <!-- <dt>SNTP</dt>
+                <dd>Simple Network Time Protocol.</dd>
+                <dt>DHCP</dt>
+                <dd>Dynamic Host Configuration Protocol.</dd>
+                <dt>HTTP/HTTPS</dt>
+                <dd>Hyper Text Transfer Protocol/Secure.</dd>
+                <dt>POP</dt>
+                <dd>Post Office Protocol.</dd>
+                <dt>IRC</dt>
+                <dd>Internet Relay Chat.</dd>
+                <dt>MIME</dt>
+                <dd>Multipurpose Internet Mail Extensions.</dd> -->
+            </dl>
+        </div>
+        <br>
+        <!--  -->
+        <li><code><b>&lt;del&gt;</b></code> element represents a range of text that has been deleted from a document.
+            For example it can be used when rendering "track changes" or source code diff information. <b>The
+                <code>&lt;ins&gt;</code> element</b> can be used for the opposite purpose: to indicate text that has
+            been
+            added to the document.</li>
+        <br>
+        <div class="section">
+            <p>
+                <del>This text that has been deleted from a document.</del>
+            </p>
+        </div>
+        <br>
+        <!--  -->
+
+
     </ul>
+
 
     <script type="module" src="app.js">
         import lottieWeb from 'https://cdn.skypack.dev/lottie-web';
